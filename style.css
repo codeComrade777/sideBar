@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fff;
+}
+--root{
+    --main-color: #3d5af1;
+    --main-color-dark: #3651d4;
+    --main-color-light: #5872f5;
+    --text-color: #cfcde7;
+}
+html{
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.show-menu{
+    position: absolute;
+   left: 0%;
+    margin: 10px;
+}
+.show-menu i{
+    background-color: #365af1;
+    padding: 10px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+.close-btn{
+    position: absolute;
+    top: 0%;
+   margin-left: 265px;
+}
+.close-btn i{
+    background-color: #365af1;
+    padding: 10px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+.side-menu{
+    position: fixed;
+    background-color: #365af1;
+    height: 100vh;
+    width: 35vh;
+    left:-100%;
+    transition: ease 0.5s;
+}
+.side-menu.active{
+    left: 0%;
+    /* transition: right 0.5s; */
+}
+.side-menu.remove{
+    right: -100%;
+}
+.quick-search i {
+    text-align: center;
+    position: absolute;
+    padding: 15px 12px;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+.side-menu{
+    /* text-align: center; */
+    padding: 20px;
+}
+.side-menu .logo{
+    margin-top: 20px;
+    text-align: center;
+}
+.side-menu .logo a{
+    font-size: 2.3rem;
+    color: #fff;
+}
+.side-menu .logo i{
+    margin-right: 10px;
+}
+.side-menu .sidemenu-container .quick-search{
+    padding: 10px;
+    color: #cfcde7;
+    margin-top: 20px;
+}
+.side-menu .sidemenu-container .quick-search input{
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    color: #cfcde7;
+    background-color: #2b46cb;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.side-menu .sidemenu-container .quick-search input::placeholder{
+    color: #cfcde7;
+}
+.side-menu .sidemenu-container .navbar{
+    
+    height: 40vh;
+    padding: 0px;
+    width: 100%;
+    display: block;
+    
+}
+.side-menu .sidemenu-container .navbar a{
+    padding: 10px 10px;
+    display: block;
+    line-height: 3;
+    font-size: 1.5rem;
+    color: #cfcde7;
+    /* text-align: justify; */
+}
+.side-menu .sidemenu-container .navbar a i{
+    margin-right: 14px;
+}
+.side-menu .sidemenu-container .shortcuts h4{
+    font-size: 1.5rem;
+    color: #cfcde7;
+    font-weight: 500;
+}
+.side-menu .sidemenu-container .shortcuts a{
+    padding: 10px 10px;
+    display: block;
+    line-height: 3;
+    font-size: 1.5rem;
+    color: #cfcde7;
+}
+.side-menu .sidemenu-container .shortcuts a i{
+    margin-right: 14px;
+}
+.admin
+{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+.admin .admin-heading h6{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 15px;
+    font-weight: normal;
+}
+.admin .admin-heading span{
+    font-size: 1rem;
+    margin-left: 15px;
+    color: #cfcde7;
+}
+.admin .logout{
+    margin-left: 90px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #3651d4;
+    padding: 10px;
+    border-radius: .5rem;
+    color: #fff;
+}
+.admin .logo-img img{
+    height: 50px;
+    border-radius: 50%;
+}
+.home-section{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.home-section
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  height: 92vh;
+    align-items: center;
+}
+.home-section .home-container h1{
+    font-size: 5rem;
+    margin-left: 300px;
+}
+.home-section .home-container p{
+    font-size: 2rem;
+    margin-left: 300px;
+}
+.copyright{
+   display: flex;
+   justify-content: center;
+}
+.copyright p{
+    font-size: 1.5rem;
+}
+.copyright p span{
+    font-weight: bold;
+    color: #5872f5;
+}
+
+
+@media(max-width:768px)
+{
+    html{
+        font-size: 80%;
+    }
+    .home-section .home-container h1{
+        font-size: 2rem;
+        margin-left: 0px;
+    }
+    .home-section .home-container p{
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    .close-btn{
+        position: absolute;
+        top: 0%;
+       margin-left: 320px;
+       
+    }
+    .copyright{
+        right: 0%;
+    }
+}
+@media(max-width:450px)
+{
+    html{
+        font-size: 50%;
+    }
+    
+    .close-btn{
+        position: absolute;
+        top: 0%;
+       margin-left: 230px;
+       
+    }
+    .copyright{
+        right: 0%;
+    }
+}
